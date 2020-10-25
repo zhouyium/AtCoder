@@ -1,40 +1,39 @@
 //https://atcoder.jp/contests/hhkb2020/tasks/hhkb2020_c
 //HHKB Programming Contest 2020
 //C - Neq Min
-//使用最小堆
+/*
+使用 STL set
+先将 0 ~ 2e5 所有数据插入 set 中。
+然后读取数据，有的数据，从 set 中删除。
+*/
 #include <iostream>
-#include <algorithm>
-#include <map>
+#include <set>
 
 using namespace std;
 
+const int MAXN=2e5+4;
+
 int main() {
+    //快读
+    ios::sync_with_stdio(false);
+    //cin.tie(0);
+
+    //讲所有数据标记
+    set<int> st;
+    for (int i=0; i<=MAXN; i++) {
+        st.insert(i);
+    }
+
     int n;
     cin>>n;
 
-    //定义一个最小堆
-    map<int, int> myMap;
-    int minx=2e5+4;
-    int maxx=-1;
-
-    for (int i=1; i<=n; i++) {
-        int x;
+    int x;
+    for (int i=0; i<n; i++) {
         cin>>x;
 
-        myMap[x]++;
-        maxx=max(maxx, x);
-        minx=min(minx, x);
-
-        //输出
-        if (minx>0) {
-            cout<<minx-1;
-        } else if (i>maxx) {
-            cout<<maxx+1;
-        } else {
-            
-        }
-        cout<<"\n";
-    }
+        st.erase(x);
+        cout<<*st.begin()<<"\n";
+   }
 
     return 0;
 }
