@@ -8,7 +8,7 @@ int main() {
     cin>>n;
 
     set<long long> ans;
-    for (long long i=2; i*i<=n; i++) {
+    for (long long i=1; i*i<=n; i++) {
         if (0==n%i) {
             ans.insert(i);
             ans.insert(n/i);
@@ -19,6 +19,5 @@ int main() {
     for(it=ans.begin(); it!=ans.end(); it++) {
         cout<<*it<<"\n";
     }
-    cout<<n<<"\n";
     return 0;
 }
