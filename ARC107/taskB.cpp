@@ -22,7 +22,6 @@ int main() {
     for (LL i=k; i<=2*n; i++) {
         ans += (solve(i)*solve(i-k));
     }
-
     cout<<ans<<"\n";
 
     return 0;
