@@ -43,6 +43,7 @@ AtCoder Grand Contest。简称 AGC，大师赛。
 ### ABC181
 | 题号 | 题目 | 链接 | AC参考代码 |
 | :-----| :---- | :---- | :---- |
+| B题 | Trapezoid Sum | https://atcoder.jp/contests/abc181/tasks/abc181_b | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskB.cpp |
 | C题 | Collinearity | https://atcoder.jp/contests/abc181/tasks/abc181_c | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskC.cpp |
 | D题 | Hachi | https://atcoder.jp/contests/abc181/tasks/abc181_d | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskD.cpp |
 ## AtCoder Regular Contest
