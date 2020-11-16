@@ -53,6 +53,7 @@ AtCoder Grand Contest。简称 AGC，大师赛。
 | 题号 | 题目 | 链接 | AC参考代码 |
 | :-----| :---- | :---- | :---- |
 | A题 | twiblr | https://atcoder.jp/contests/abc182/tasks/abc182_a | https://github.com/zhouyium/AtCoder/blob/master/ABC182/taskA.cpp |
+| B题 | Almost GCD | https://atcoder.jp/contests/abc182/tasks/abc182_b | https://github.com/zhouyium/AtCoder/blob/master/ABC182/taskB.cpp |
 ## AtCoder Regular Contest
 ### ARC106
 ### ARC107
