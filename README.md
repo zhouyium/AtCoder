@@ -49,6 +49,10 @@ AtCoder Grand Contest。简称 AGC，大师赛。
 | C题 | Collinearity | https://atcoder.jp/contests/abc181/tasks/abc181_c | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskC.cpp |
 | D题 | Hachi | https://atcoder.jp/contests/abc181/tasks/abc181_d | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskD.cpp |
 | E题 | Transformable Teacher | https://atcoder.jp/contests/abc181/tasks/abc181_e | https://github.com/zhouyium/AtCoder/blob/master/ABC181/taskE.cpp |
+### ABC182
+| 题号 | 题目 | 链接 | AC参考代码 |
+| :-----| :---- | :---- | :---- |
+| A题 | twiblr | https://atcoder.jp/contests/abc182/tasks/abc182_a | https://github.com/zhouyium/AtCoder/blob/master/ABC182/taskA.cpp |
 ## AtCoder Regular Contest
 ### ARC106
 ### ARC107
