@@ -8,7 +8,7 @@ const int MAXN=2e5+4;
 long long nums[MAXN];
 
 int main() {
-#if 0
+#if 1
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
@@ -24,6 +24,7 @@ int main() {
         nums[t] -= p;
     }
 
+    //计算前缀和
     for (int i=1; i<MAXN; i++) {
         nums[i] += nums[i-1];
     }
