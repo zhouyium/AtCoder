@@ -14,14 +14,13 @@ struct _DISJOINTSET {
     当_ds[x]>0的时候，表示父节点
     */
     vector<T> _ds;//并查集
- 
-    _DISJOINTSET(T n) {
-        _ds = vector<T>(n, -1);
-    }
+    T _n;//数据容量
+
+    _DISJOINTSET(T n) : _n(n),  _ds(n, -1) {}
   
     //查找x的父亲
     T find_root(T x) {
-        if (_ds[x] < 0) {
+        if (x<0 || x>=_n || _ds[x]<0) {
             return x;
         }
         return _ds[x] = find_root(_ds[x]);
@@ -29,6 +28,9 @@ struct _DISJOINTSET {
  
     //建立关系
     bool union_set(T x, T y) {
+        if (x<0 || x>=_n || y<0 || y>=_n) {
+            return false;
+        }
         x = find_root(x);
         y = find_root(y);
         if (x==y) {
@@ -46,11 +48,17 @@ struct _DISJOINTSET {
  
     //查找x和y是否在同一个父亲
     bool relation(T x, T y) {
+        if (x<0 || x>=_n || y<0 || y>=_n) {
+            return false;
+        }
         return find_root(x) == find_root(y);
     }
 
     //数据 x 所在集合大小
     T size(T x) {
+        if (x<0 || x>=_n) {
+            return 0;
+        }
         return -_ds[find_root(x)];
     }
 };
